@@ -5,7 +5,7 @@ const view = document.getElementById("view");
 const token = decodeURIComponent((location.hash || "").replace(/^#\/?/, "")).trim();
 
 function missing(title, body) {
-  document.title = "Pass not found · GatePass";
+  document.title = "Pass not found · AGENTIC X 2.0";
   view.innerHTML = `
     <section class="torn">
       <h1>${esc(title)}</h1>
@@ -77,7 +77,7 @@ function shape(t) {
 
 function render(p) {
   const ev = p.event;
-  document.title = `${p.name} · ${typo(ev.name)} · GatePass`;
+  document.title = `${p.name} · ${typo(ev.name)} · AGENTIC X 2.0`;
   const used = !!p.checked_in_at;
   view.innerHTML = `
     <div class="ticket-wrap">

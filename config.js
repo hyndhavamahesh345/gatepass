@@ -11,5 +11,5 @@ window.GATEPASS = {
   // googleSignIn: "Continue with Google" (needs the Google provider set up in Supabase → Authentication → Providers).
   // The hosted copy uses Google only, because its shared Supabase project has email sign-ups switched off.
   emailSignIn: true,
-  googleSignIn: false,
+  googleSignIn: true,
 };

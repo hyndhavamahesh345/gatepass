@@ -76,7 +76,7 @@ function fail(e) {
 
 function signInView(errMsg = "") {
   roleEl.textContent = "Organiser";
-  document.title = "GatePass · free QR entry passes for club events";
+  document.title = "AGENTIC X 2.0";
   view.innerHTML = `
     <section class="signin">
       <div class="poster hero-poster" id="art">
@@ -147,7 +147,7 @@ function checkInbox(email) {
 // ─────────────────────────────────────────────── events list
 
 async function listView() {
-  document.title = "Your events · GatePass";
+  document.title = "Your events · AGENTIC X 2.0";
   view.innerHTML = `<div class="skeleton" style="height:220px"></div>`;
   const { data, error } = await sb.from("gp_events")
     .select("id,name,club,starts_at,venue,art,gp_passes(count),gp_scans(count)")
@@ -199,7 +199,7 @@ async function eventForm(id = null) {
     ev = data;
   }
   const when = ev.starts_at ? new Date(ev.starts_at) : (() => { const d = nextSaturday(); d.setHours(18, 0, 0, 0); return d; })();
-  document.title = `${id ? "Edit" : "New"} event · GatePass`;
+  document.title = `${id ? "Edit" : "New"} event · AGENTIC X 2.0`;
   view.innerHTML = `
     <div class="narrow">
     <a class="backlink" href="${id ? `#/e/${id}` : "#"}">${I.back}${id ? "Back to the event" : "Your events"}</a>
@@ -270,7 +270,7 @@ async function eventView(id) {
   const state = { ev, passes, first: new Map(), bounced: 0, upload: null, filter: "", shown: 120 };
   for (const s of scans) s.is_first ? state.first.set(s.pass_id, s) : state.bounced++;
 
-  document.title = `${typo(ev.name)} · GatePass`;
+  document.title = `${typo(ev.name)} · AGENTIC X 2.0`;
   view.innerHTML = `
     <a class="backlink" href="#">${I.back}Your events</a>
     <div class="dash">

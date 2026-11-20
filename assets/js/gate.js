@@ -264,7 +264,7 @@ function showScanner() {
   joinEl.hidden = true; scanEl.hidden = false;
   $("evName").textContent = typo(S.event.name);
   $("gateName").textContent = S.gate;
-  document.title = `${S.gate} · ${typo(S.event.name)} · GatePass`;
+  document.title = `${S.gate} · ${typo(S.event.name)} · AGENTIC X 2.0`;
   setCounts(S.event.counts);
   idle();
   loadStats();
