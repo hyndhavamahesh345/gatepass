@@ -25,7 +25,7 @@ function notConfigured() {
         <li>Run <b>schema.sql</b> in its SQL editor.</li>
         <li>Put the project URL and anon key in <b>config.js</b>.</li>
       </ol>
-      <a class="btn" href="https://github.com/Souradip121/gatepass#host-your-own-copy-free-5-steps" rel="noopener">Read the 5-step guide ${I.open}</a>
+      <a class="btn" href="https://github.com/hyndhavamahesh345/gatepass#host-your-own-copy-free-5-steps" rel="noopener">Read the 5-step guide ${I.open}</a>
     </section>`;
   view.querySelector("#art").style.backgroundImage = `url("${artUrl(0)}")`;
 }
@@ -102,7 +102,7 @@ function signInView(errMsg = "") {
       <button class="row" type="button" id="google" style="min-height:62px;justify-content:center">${I.google}<span>Continue with Google</span></button>` : ""}`}
       <div class="links" style="margin-top:8px">
         <a href="gate/">${I.qr} Gate staff? Join with a code</a>
-        <a href="https://github.com/Souradip121/gatepass" rel="noopener">${I.open} Host your own copy</a>
+        <a href="https://github.com/hyndhavamahesh345/gatepass" rel="noopener">${I.open} Host your own copy</a>
       </div>
       </div>
     </section>`;
